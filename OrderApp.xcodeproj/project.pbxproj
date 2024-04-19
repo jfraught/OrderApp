@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92380E32BD2FA1A004AA520 /* Restoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92380E22BD2FA1A004AA520 /* Restoration.swift */; };
 		F92C02892BD15B860084B76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C02882BD15B860084B76E /* AppDelegate.swift */; };
 		F92C028B2BD15B860084B76E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C028A2BD15B860084B76E /* SceneDelegate.swift */; };
 		F92C02902BD15B860084B76E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F92C028F2BD15B860084B76E /* Base */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92380E22BD2FA1A004AA520 /* Restoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration.swift; sourceTree = "<group>"; };
 		F92C02852BD15B860084B76E /* OrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92C02882BD15B860084B76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92C028A2BD15B860084B76E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				F92C02A32BD1A7730084B76E /* CategoryTableViewController.swift */,
-				F92C029E2BD1A72D0084B76E /* MenuTableViewController.swift */,
 				F9B9FFB02BD2DF8A0090441D /* MenuItemCell.swift */,
 				F92C02A52BD1AD1C0084B76E /* MenuItemDetailViewController.swift */,
+				F92C029E2BD1A72D0084B76E /* MenuTableViewController.swift */,
 				F9B9FFAC2BD2C1E20090441D /* OrderConfirmationViewController.swift */,
 				F92C02A02BD1A73D0084B76E /* OrderTableViewController.swift */,
 			);
@@ -106,6 +108,7 @@
 				F92C02A72BD1AD5F0084B76E /* MenuItem.swift */,
 				F9B9FFAA2BD2B1F70090441D /* Order.swift */,
 				F92C02AA2BD1BD880084B76E /* ResponseModels .swift */,
+				F92380E22BD2FA1A004AA520 /* Restoration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				F92C02A42BD1A7730084B76E /* CategoryTableViewController.swift in Sources */,
 				F92C02892BD15B860084B76E /* AppDelegate.swift in Sources */,
 				F9B9FFB12BD2DF8A0090441D /* MenuItemCell.swift in Sources */,
+				F92380E32BD2FA1A004AA520 /* Restoration.swift in Sources */,
 				F9B9FFAD2BD2C1E20090441D /* OrderConfirmationViewController.swift in Sources */,
 				F92C028B2BD15B860084B76E /* SceneDelegate.swift in Sources */,
 			);

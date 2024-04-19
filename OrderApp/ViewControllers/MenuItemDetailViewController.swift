@@ -32,6 +32,11 @@ class MenuItemDetailViewController: UIViewController {
         updateUI()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        MenuController.shared.updateUserActivity(with: .menuItemDetail(menuItem))
+    }
+
     func updateUI() {
         nameLabel.text = menuItem.name
         priceLabel.text = menuItem.price.formatted(.currency(code: "usd"))
@@ -39,7 +44,7 @@ class MenuItemDetailViewController: UIViewController {
 
         Task.init {
             if let image = try? await MenuController.shared.fetchImage(from: menuItem.imageURL) {
-                imageView.image = image 
+                imageView.image = image
             }
         }
     }

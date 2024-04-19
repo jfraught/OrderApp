@@ -52,7 +52,7 @@
         <!--Menu Table View Controller-->
         <scene sceneID="L9J-YH-IdE">
             <objects>
-                <tableViewController id="1vC-i0-vEz" customClass="MenuTableViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="menu" id="1vC-i0-vEz" customClass="MenuTableViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="l4Q-gR-KSP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,20 +66,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AuP-od-FPY">
-                                            <rect key="frame" x="59.333333333333329" y="15" width="33" height="14.333333333333334"/>
+                                            <rect key="frame" x="20" y="15" width="33" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="$ Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TT0-D8-vnm">
-                                            <rect key="frame" x="315.00000000000006" y="15" width="39.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="315" y="15" width="39.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="photo.on.rectangle" catalog="system" id="JOv-dS-v6d">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JOv-dS-v6d">
                                             <rect key="frame" x="19.666666666666664" y="12" width="24.666666666666668" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -104,7 +104,7 @@
         <!--Menu Item Detail View Controller-->
         <scene sceneID="TCY-7N-VNP">
             <objects>
-                <viewController id="CWT-c8-4N8" customClass="MenuItemDetailViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuItemDetail" id="CWT-c8-4N8" customClass="MenuItemDetailViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMf-Pg-v28">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="3623.6641221374043" y="-280.28169014084506"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Order-->
         <scene sceneID="i2k-XZ-k9M">
             <objects>
                 <tableViewController id="jox-9L-gw0" customClass="OrderTableViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -216,7 +216,7 @@
                             <outlet property="delegate" destination="jox-9L-gw0" id="k0C-GP-rtJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="JD1-Qd-ZCu">
+                    <navigationItem key="navigationItem" title="Order" id="JD1-Qd-ZCu">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="swS-Ny-XnA">
                             <connections>
                                 <action selector="submitTapped:" destination="jox-9L-gw0" id="0ee-z2-Qo6"/>

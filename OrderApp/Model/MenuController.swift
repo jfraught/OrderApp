@@ -19,12 +19,27 @@ class MenuController {
     static let shared = MenuController()
     static let orderUpdatedNotification = Notification.Name("MenuController.orderUpdated")
 
+    var userActivity = NSUserActivity(activityType: "com.example.OrderApp.order")
     var order = Order() {
         didSet {
             NotificationCenter.default.post(name: MenuController.orderUpdatedNotification, object: nil)
+            userActivity.order = order 
         }
     }
     let baseURL = URL(string: "http://localhost:8080/")!
+
+    func updateUserActivity(with controller: StateRestorationController) {
+        switch controller {
+        case .menu(let category):
+            userActivity.menuCategory = category
+        case .menuItemDetail(let menuItem):
+            userActivity.menuItem = menuItem
+        case .order, .categories:
+            break
+        }
+
+        userActivity.controllerIdentifier = controller.identfier
+    }
 
     func fetchCategories() async throws -> [String] {
         let categoriesURL = baseURL.appendingPathComponent("categories")
